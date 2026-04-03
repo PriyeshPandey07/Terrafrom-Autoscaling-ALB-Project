@@ -239,7 +239,7 @@ resource "aws_autoscaling_group" "asg" {
   # ✅ Tags
   tag {
     key                 = "Name"
-    value               = "zomato-asg-instance"
+    value               = "throne-asg-instance"
     propagate_at_launch = true
   }
 
@@ -251,13 +251,13 @@ resource "aws_autoscaling_group" "asg" {
 
   tag {
     key                 = "Project"
-    value               = "Zomato-Clone"
+    value               = "Throne-Clone"
     propagate_at_launch = true
   }
 }
 
 resource "aws_sns_topic" "asg_notifications" {
-  name = "zomato-asg-topic"
+  name = "throne-asg-topic"
 } 
 
 # 3️⃣ SNS Notification
