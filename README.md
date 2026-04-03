@@ -90,8 +90,8 @@ This project is ideal for learning or demonstrating real-world DevOps concepts l
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/terrathrone.git
-cd terrathrone
+git clone https://github.com/PriyeshPandey07/Terrafrom-Autoscaling-ALB-Project.git
+cd terraformproject
 ```
 
 ### 2. Set AWS Credentials (Never hardcode these!)
