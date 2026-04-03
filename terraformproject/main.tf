@@ -1,6 +1,6 @@
 provider "aws" {
   region     = var.region
-  access_key = "put-your-access-key-here""
+  access_key = "put-your-access-key-here"
   secret_key = "put-your-secret-key-here"
 }
 
@@ -137,8 +137,8 @@ resource "aws_security_group" "ec2_sg" {
   vpc_id = aws_vpc.project_vpc.id
 
   ingress {
-    from_port       = 3000
-    to_port         = 3000
+    from_port       = 80
+    to_port         = 80
     protocol        = "tcp"
     security_groups = [aws_security_group.alb_sg.id]
   }
@@ -168,7 +168,7 @@ resource "aws_lb" "alb" {
 
 # ---------------- Target Group ----------------
 resource "aws_lb_target_group" "tg" {
-  port     = 3000
+  port     = 80
   protocol = "HTTP"
   vpc_id   = aws_vpc.project_vpc.id
 
