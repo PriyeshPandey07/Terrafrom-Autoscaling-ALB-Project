@@ -6,7 +6,7 @@
 
 ## 📌 Project Overview
 
-**TerraThrone** is a Terraform project that provisions a fully automated, highly available AWS infrastructure to host a static web application (a Game of Thrones themed Zomato clone). The entire infrastructure — from networking to compute to monitoring — is defined as code and deployable with a single `terraform apply`.
+**TerraThrone** is a Terraform project that provisions a fully automated, highly available AWS infrastructure to host a static web application (a Game of Thrones themed). The entire infrastructure — from networking to compute to monitoring — is defined as code and deployable with a single `terraform apply`.
 
 This project is ideal for learning or demonstrating real-world DevOps concepts like multi-AZ deployments, auto-scaling, load balancing, and cloud notifications using AWS-native services.
 
